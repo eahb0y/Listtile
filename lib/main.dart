@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'listTile.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,17 +13,10 @@ class MyApp extends StatelessWidget {
           appBar: AppBar(title: const Center(child: Text("Conatainer"))),
           body: Center(
             child: Column(children: [
-              Padding(
-                  padding: EdgeInsets.only(left: 2.0, top: 1.0, right: 2.0),
-                  child: Container(
-                    decoration: BoxDecoration(
-                        border: Border.all(color: Colors.grey, width: 1.0)),
-                    child: ListTile(
-                      leading: Icon(Icons.add_card),
-                      title: const Text("dasdadsad"),
-                      subtitle: const Text("sfdsfsfdsfdgfdg"),
-                    ),
-                  ))
+              const Cards(icon: Icons.access_time_sharp, label: "label"),
+              const Cards(icon: Icons.access_time_sharp, label: "label"),
+              const Cards(icon: Icons.access_time_sharp, label: "label"),
+              const Cards(icon: Icons.access_time_sharp, label: "label"),
             ]),
           )),
     );
